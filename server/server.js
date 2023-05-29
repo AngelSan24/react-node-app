@@ -1,7 +1,7 @@
 // server/index.js
 
 const express = require('express');
-const mysql = require('mysql');
+const mysql = require('mysql2');
 const myconn = require('express-myconnection');
 const cors = require('cors');
 
@@ -10,11 +10,11 @@ const routes = require('../routes');
 const app = express();
 const port = process.env.PORT || 3000;
 const dbOptions = {
-  host: 'localhost',
+  host: 'byoqitgxwidg9ulnoywg-mysql.services.clever-cloud.com',
   port: 3306,
-  user: 'root',
-  password: '1234',
-  database:'aplicacion_iglesia'
+  user: 'usm9oaspwebg88ty',
+  password: 'usm9oaspwebg88ty',
+  database:'byoqitgxwidg9ulnoywg'
 }
 
 // Middlewares ------------------------------------------------
